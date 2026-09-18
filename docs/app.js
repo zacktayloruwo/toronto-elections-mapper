@@ -390,8 +390,26 @@ async function main() {
   selCYear.addEventListener('change', () => { state.cyear = +selCYear.value; updateCensus(); refreshHover() })
   selCScale.addEventListener('change', () => { state.cscale = selCScale.value; updateCensus() })
   chkAll.addEventListener('change', () => { state.call = chkAll.checked; fillVarSelect(); fillCensusYears(); updateCensus() })
-  selEYear.addEventListener('change', () => { state.eyear = +selEYear.value; fillElectionControls(selCand.value); updateElection(); refreshHover() })
-  selCand.addEventListener('change', () => { fillElectionControls(selCand.value); updateElection(); refreshHover() })
+  // Move the census map to the year with data closest to the election
+  // (ties go to the earlier census).
+  function syncCensusYear() {
+    const years = varById.get(state.cvar).years
+    const nearest = years.reduce((best, y) =>
+      Math.abs(y - state.eyear) < Math.abs(best - state.eyear) ? y : best)
+    if (nearest === state.cyear) return
+    state.cyear = nearest
+    selCYear.value = nearest
+    updateCensus()
+  }
+
+  const onElectionChange = () => {
+    fillElectionControls(selCand.value)
+    updateElection()
+    syncCensusYear()
+    refreshHover()
+  }
+  selEYear.addEventListener('change', () => { state.eyear = +selEYear.value; onElectionChange() })
+  selCand.addEventListener('change', onElectionChange)
   selEScale.addEventListener('change', () => { state.escale = selEScale.value; updateElection() })
 
   updateCensus()
