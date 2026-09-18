@@ -219,13 +219,44 @@ async function main() {
     selCYear.value = state.cyear
   }
 
-  function fillElectionControls() {
-    selEYear.replaceChildren(...meta.elections.map((e) => new Option(e.year, e.year)))
+  // Candidates are matched across elections by full name, since the column id
+  // can differ between years (e.g. "tory" vs "tory_john").
+  const people = new Map() // label -> [{ year, id }], ascending by year
+  for (const e of meta.elections) {
+    for (const c of e.candidates) {
+      if (!people.has(c.label)) people.set(c.label, [])
+      people.get(c.label).push({ year: e.year, id: c.id })
+    }
+  }
+  const OTHER = 'All other candidates'
+  const lastName = (label) => label.split(' ').pop()
+  const peopleSorted = [...people.keys()].sort((a, b) =>
+    (a === OTHER) - (b === OTHER) || lastName(a).localeCompare(lastName(b)) || a.localeCompare(b))
+
+  const currentPerson = () =>
+    electionByYear.get(state.eyear)?.candidates.find((c) => c.id === state.ecand)?.label
+
+  // Default to the top candidate of the latest election if the hash is invalid
+  if (!currentPerson()) {
+    const latest = meta.elections[meta.elections.length - 1]
+    if (!electionByYear.has(state.eyear)) state.eyear = latest.year
+    state.ecand = electionByYear.get(state.eyear).candidates[0].id
+  }
+
+  selCand.replaceChildren(...peopleSorted.map((label) => {
+    const years = people.get(label).map((r) => r.year)
+    return new Option(`${label} (${years.join(', ')})`, label)
+  }))
+
+  // Restrict the year list to the elections the selected candidate ran in
+  function fillElectionControls(person) {
+    const runs = people.get(person)
+    if (!runs.some((r) => r.year === state.eyear)) state.eyear = runs[runs.length - 1].year
+    state.ecand = runs.find((r) => r.year === state.eyear).id
+    selCand.value = person
+    selEYear.replaceChildren(...runs.map((r) => new Option(r.year, r.year)))
     selEYear.value = state.eyear
-    const cands = electionByYear.get(state.eyear).candidates
-    selCand.replaceChildren(...cands.map((c) => new Option(c.label, c.id)))
-    if (!cands.some((c) => c.id === state.ecand)) state.ecand = cands[0].id
-    selCand.value = state.ecand
+    selEYear.disabled = runs.length === 1
   }
 
   chkAll.checked = state.call
@@ -233,7 +264,7 @@ async function main() {
   selEScale.value = state.escale
   fillVarSelect()
   fillCensusYears()
-  fillElectionControls()
+  fillElectionControls(currentPerson())
 
   // ---- Maps ----
   const left = makeMap('map-census', tracts, bounds)
@@ -307,7 +338,7 @@ async function main() {
       (x) => fmtPct(x, state.escale === 'fixed' ? 0 : 1))
 
     $('election-note').replaceChildren(
-      h('strong', {}, cand.label), `, ${state.eyear}. Citywide share: ${fmtPct(cand.city_share)}.`,
+      h('strong', {}, cand.label), `, ${state.eyear}. Citywide share, election day: ${fmtPct(cand.city_share)}.`,
     )
     writeHash()
   }
@@ -359,8 +390,8 @@ async function main() {
   selCYear.addEventListener('change', () => { state.cyear = +selCYear.value; updateCensus(); refreshHover() })
   selCScale.addEventListener('change', () => { state.cscale = selCScale.value; updateCensus() })
   chkAll.addEventListener('change', () => { state.call = chkAll.checked; fillVarSelect(); fillCensusYears(); updateCensus() })
-  selEYear.addEventListener('change', () => { state.eyear = +selEYear.value; fillElectionControls(); updateElection(); refreshHover() })
-  selCand.addEventListener('change', () => { state.ecand = selCand.value; updateElection(); refreshHover() })
+  selEYear.addEventListener('change', () => { state.eyear = +selEYear.value; fillElectionControls(selCand.value); updateElection(); refreshHover() })
+  selCand.addEventListener('change', () => { fillElectionControls(selCand.value); updateElection(); refreshHover() })
   selEScale.addEventListener('change', () => { state.escale = selEScale.value; updateElection() })
 
   updateCensus()

@@ -114,6 +114,13 @@ select:focus-visible, input:focus-visible {
 
 .note strong { color: var(--ink); font-weight: 600; }
 
+.caption {
+  margin: 4px 0 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
 .map-wrap { position: relative; flex: 1; min-height: 480px; }
 .map { position: absolute; inset: 0; }
 
