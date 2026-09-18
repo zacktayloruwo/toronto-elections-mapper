@@ -1,0 +1,13 @@
+# Raw source data (kept out of the public repo; used by prep/build_data.R)
+*.dta
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qpj
+*.qmd
+
+# OS / editor
+.DS_Store
+.claude/settings.local.json

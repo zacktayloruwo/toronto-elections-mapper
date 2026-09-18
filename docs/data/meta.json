@@ -1,0 +1,1148 @@
+{
+  "census_years": [1996, 2001, 2006, 2011, 2016, 2021],
+  "variables": [
+    {
+      "id": "agec0019_pct",
+      "label": "% Age 0 - 19",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "agec2029_pct",
+      "label": "% Age 20 - 29",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "agec3064_pct",
+      "label": "% Age 30 - 64",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "agec065p_pct",
+      "label": "% Age 65+",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "marsmaclcomm_pct",
+      "label": "% Common Law",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": false,
+      "years": [2011, 2016, 2021]
+    },
+    {
+      "id": "marsnmcldivo_pct",
+      "label": "% Divorced",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "marsmaclmarr_pct",
+      "label": "% Married",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "marsnmclnevr_pct",
+      "label": "% Never Married",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "marsnmclsepa_pct",
+      "label": "% Separated",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "marsnmclwido_pct",
+      "label": "% Widowed",
+      "group": "Age & Family",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "jwmdbike_pct",
+      "label": "% Bike Commute",
+      "group": "Commuting",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "jwmdauto_pct",
+      "label": "% Car Commute",
+      "group": "Commuting",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "jwmdtran_pct",
+      "label": "% Transit Commute",
+      "group": "Commuting",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "jwmdwalk_pct",
+      "label": "% Walk Commute",
+      "group": "Commuting",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_bikescore",
+      "label": "Bike Score",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_dist__nc",
+      "label": "Distance from City Hall",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_popdsqkm__nc",
+      "label": "Population Density",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_childcare",
+      "label": "Proximity to Childcare",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_educpri",
+      "label": "Proximity to Elementary School",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_grocery",
+      "label": "Proximity to Grocery",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_health",
+      "label": "Proximity to Health Care",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_emp",
+      "label": "Proximity to Jobs",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_lib",
+      "label": "Proximity to Library",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_parks",
+      "label": "Proximity to Parks",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_pharma",
+      "label": "Proximity to Pharmacy",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_educsec",
+      "label": "Proximity to Secondary School",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_pmi_prox_idx_transit",
+      "label": "Proximity to Transit",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_transitscore",
+      "label": "Transit Score",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_walkscore",
+      "label": "Walk Score",
+      "group": "Density, Location & Access",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "edcacert_pct",
+      "label": "% College / Trades Certificate",
+      "group": "Education & Labour Force",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "lfaainlfempl_pct",
+      "label": "% Employed",
+      "group": "Education & Labour Force",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "edcahigh_pct",
+      "label": "% High School or Less",
+      "group": "Education & Labour Force",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "lfaanolf_pct",
+      "label": "% Not in Labour Force",
+      "group": "Education & Labour Force",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "lfaainlfunem_pct",
+      "label": "% Unemployed",
+      "group": "Education & Labour Force",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "edcauniv_pct",
+      "label": "% University Degree",
+      "group": "Education & Labour Force",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmasiaeastchin_pct",
+      "label": "% Chinese Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmasiasoutinda_pct",
+      "label": "% East Indian Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmeurobritengl_pct",
+      "label": "% English Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmasiaeastfili_pct",
+      "label": "% Filipino Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmeurofren_tot_pct",
+      "label": "% French Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016]
+    },
+    {
+      "id": "ethmeurosoutgrek_pct",
+      "label": "% Greek Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmcarihait_pct",
+      "label": "% Haitian Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmeurobritiris_pct",
+      "label": "% Irish Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmeurosoutital_pct",
+      "label": "% Italian Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmcarijama_pct",
+      "label": "% Jamaican Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmasiawestleba_pct",
+      "label": "% Lebanese Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmasiasoutpaks_pct",
+      "label": "% Pakistani Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmeuroeastpoli_pct",
+      "label": "% Polish Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmeurosoutport_pct",
+      "label": "% Portuguese Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmeurobritscot_pct",
+      "label": "% Scottish Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "ethmeuroeastukra_pct",
+      "label": "% Ukrainian Origin",
+      "group": "Ethnic Origin",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "dwtpapt__pct",
+      "label": "% Apartments",
+      "group": "Housing",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "dwtpatch_pct",
+      "label": "% Attached Housing",
+      "group": "Housing",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "dwtpsdet_pct",
+      "label": "% Detached Housing",
+      "group": "Housing",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "dwpc19611990_pct",
+      "label": "% Housing Built 1961-90",
+      "group": "Housing",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "dwpc19912021_pct",
+      "label": "% Housing Built 1991-2021",
+      "group": "Housing",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "dwpc00001960_pct",
+      "label": "% Housing Built < 1960",
+      "group": "Housing",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "hhtnown__pct",
+      "label": "% Own",
+      "group": "Housing",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "hhtnrent_pct",
+      "label": "% Rent",
+      "group": "Housing",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "imstnimm_pct",
+      "label": "% Canada-Born",
+      "group": "Immigration & Language",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "lnmt1resoffien___pct",
+      "label": "% English Mother Tongue",
+      "group": "Immigration & Language",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "lnmt1resoffifr___pct",
+      "label": "% French Mother Tongue",
+      "group": "Immigration & Language",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "imstimmi_pct",
+      "label": "% Immigrant",
+      "group": "Immigration & Language",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_ihat_avg__nc",
+      "label": "Avg. Household Income",
+      "group": "Income",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_iit__avg__nc",
+      "label": "Avg. Individual Income",
+      "group": "Income",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_ihat_med__nc",
+      "label": "Median Household Income",
+      "group": "Income",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "s_iit__med__nc",
+      "label": "Median Individual Income",
+      "group": "Income",
+      "kind": "z",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_arts_pct",
+      "label": "% Arts, Rec., Sports Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_busi_pct",
+      "label": "% Business, Finance, Admin Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_educ_pct",
+      "label": "% Ed, Law, Social, Cmnty & Gov't Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_heal_pct",
+      "label": "% Health Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_mgmt_pct",
+      "label": "% Management Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_manu_pct",
+      "label": "% Mfg. and Utilities Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_nsci_pct",
+      "label": "% Natural and Applied Sciences Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_prim_pct",
+      "label": "% Primary Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_serv_pct",
+      "label": "% Sales and Service Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "occ_trad_pct",
+      "label": "% Trades, Transport, Operators Occ.",
+      "group": "Occupation",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "rlgnabor_pct",
+      "label": "% Aboriginal Religion",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": false,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnchriangl_pct",
+      "label": "% Anglican",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnnone_pct",
+      "label": "% Atheist",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnchribapt_pct",
+      "label": "% Baptist",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnbudd_pct",
+      "label": "% Buddhist",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": false,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnchricath_tot_pct",
+      "label": "% Catholic",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnhind_pct",
+      "label": "% Hindu",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnjewi_pct",
+      "label": "% Jewish",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnmusl_pct",
+      "label": "% Muslim",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnchriorth_tot_pct",
+      "label": "% Orthodox",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnchriothr_pct",
+      "label": "% Other Christian",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": false,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnothr_pct",
+      "label": "% Other Religion",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": false,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnchripent_pct",
+      "label": "% Pentacostal",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnsikh_pct",
+      "label": "% Sikh",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "rlgnchriunch_pct",
+      "label": "% United Church",
+      "group": "Religion",
+      "kind": "pct",
+      "curated": true,
+      "years": [2001, 2011, 2021]
+    },
+    {
+      "id": "vminvisiarab_pct",
+      "label": "% Arab",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisiblck_pct",
+      "label": "% Black",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisichin_pct",
+      "label": "% Chinese",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisifili_pct",
+      "label": "% Filipino",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "abidabor1resfina_pct",
+      "label": "% First Nations",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "abidabor__ne_pct",
+      "label": "% Indigenous identity (n.e.c.)",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "abidabor1resinuk_pct",
+      "label": "% Inuk",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisijapn_pct",
+      "label": "% Japanese",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisikore_pct",
+      "label": "% Korean",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisilati_pct",
+      "label": "% Latino",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "abidabormres_pct",
+      "label": "% Multiple Indigenous identities",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisimult_pct",
+      "label": "% Multiple Visible Minority",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "abidabor1resmeti_pct",
+      "label": "% Métis",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "abidnabo_pct",
+      "label": "% Non-Indigenous",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisi__ne_pct",
+      "label": "% Other Visible Minority",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisisasi_pct",
+      "label": "% South Asian",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisiseas_pct",
+      "label": "% Southeast Asian",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisi_pct",
+      "label": "% Visible Minority",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminvisiweas_pct",
+      "label": "% West Asian",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": false,
+      "years": [2001, 2006, 2011, 2016, 2021]
+    },
+    {
+      "id": "vminnvis_pct",
+      "label": "% White",
+      "group": "Visible Minority & Indigenous Identity",
+      "kind": "pct",
+      "curated": true,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+    }
+  ],
+  "elections": [
+    {
+      "year": 1997,
+      "candidates": [
+        {
+          "id": "lastman",
+          "label": "Mel Lastman",
+          "city_share": 0.509
+        },
+        {
+          "id": "hall",
+          "label": "Barbara Hall",
+          "city_share": 0.4547
+        },
+        {
+          "id": "other",
+          "label": "All other candidates",
+          "city_share": 0.0363
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "candidates": [
+        {
+          "id": "lastman",
+          "label": "Mel Lastman",
+          "city_share": 0.772
+        },
+        {
+          "id": "gomberg",
+          "label": "Tooker Gomberg",
+          "city_share": 0.0809
+        },
+        {
+          "id": "anderson",
+          "label": "Enza Anderson",
+          "city_share": 0.0217
+        },
+        {
+          "id": "other",
+          "label": "All other candidates",
+          "city_share": 0.1253
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "candidates": [
+        {
+          "id": "miller",
+          "label": "David Miller",
+          "city_share": 0.4835
+        },
+        {
+          "id": "tory",
+          "label": "John Tory",
+          "city_share": 0.3326
+        },
+        {
+          "id": "hall",
+          "label": "Barbara Hall",
+          "city_share": 0.1032
+        },
+        {
+          "id": "nunziata",
+          "label": "John Nunziata",
+          "city_share": 0.0384
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "candidates": [
+        {
+          "id": "miller",
+          "label": "David Miller",
+          "city_share": 0.5728
+        },
+        {
+          "id": "pitfield",
+          "label": "Jane Pitfield",
+          "city_share": 0.32
+        },
+        {
+          "id": "ledrew",
+          "label": "Stephen LeDrew",
+          "city_share": 0.0132
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "candidates": [
+        {
+          "id": "ford",
+          "label": "Rob Ford",
+          "city_share": 0.4693
+        },
+        {
+          "id": "smitherman",
+          "label": "George Smitherman",
+          "city_share": 0.3578
+        },
+        {
+          "id": "pantalone",
+          "label": "Joe Pantalone",
+          "city_share": 0.1185
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "candidates": [
+        {
+          "id": "tory",
+          "label": "John Tory",
+          "city_share": 0.3836
+        },
+        {
+          "id": "ford",
+          "label": "Doug Ford",
+          "city_share": 0.3523
+        },
+        {
+          "id": "chow",
+          "label": "Olivia Chow",
+          "city_share": 0.2343
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "candidates": [
+        {
+          "id": "tory",
+          "label": "John Tory",
+          "city_share": 0.6296
+        },
+        {
+          "id": "keesmaat",
+          "label": "Jennifer Keesmaat",
+          "city_share": 0.2372
+        },
+        {
+          "id": "goldy",
+          "label": "Faith Goldy",
+          "city_share": 0.0343
+        },
+        {
+          "id": "gebresellassi",
+          "label": "Saron Gebresellassi",
+          "city_share": 0.0206
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "candidates": [
+        {
+          "id": "tory_john",
+          "label": "John Tory",
+          "city_share": 0.602
+        },
+        {
+          "id": "penalosa_gil",
+          "label": "Gil Peñalosa",
+          "city_share": 0.1793
+        },
+        {
+          "id": "brown_chloe_marie",
+          "label": "Chloe Brown",
+          "city_share": 0.0764
+        },
+        {
+          "id": "acton_blake",
+          "label": "Blake Acton",
+          "city_share": 0.0154
+        },
+        {
+          "id": "climenhaga_sarah",
+          "label": "Sarah Climenhaga",
+          "city_share": 0.0132
+        },
+        {
+          "id": "luk_tony",
+          "label": "Tony Luk",
+          "city_share": 0.0128
+        },
+        {
+          "id": "yan_jack",
+          "label": "Jack Yan",
+          "city_share": 0.0103
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "candidates": [
+        {
+          "id": "bailao_ana",
+          "label": "Ana Bailão",
+          "city_share": 0.3759
+        },
+        {
+          "id": "chow_olivia",
+          "label": "Olivia Chow",
+          "city_share": 0.3434
+        },
+        {
+          "id": "saunders_mark",
+          "label": "Mark Saunders",
+          "city_share": 0.0772
+        },
+        {
+          "id": "furey_anthony",
+          "label": "Anthony Furey",
+          "city_share": 0.047
+        },
+        {
+          "id": "matlow_josh",
+          "label": "Josh Matlow",
+          "city_share": 0.0407
+        },
+        {
+          "id": "brown_chloe",
+          "label": "Chloe Brown",
+          "city_share": 0.0277
+        },
+        {
+          "id": "hunter_mitzie",
+          "label": "Mitzie Hunter",
+          "city_share": 0.0254
+        },
+        {
+          "id": "saccoccia_chris",
+          "label": "Chris Saccoccia",
+          "city_share": 0.0124
+        },
+        {
+          "id": "bradford_brad",
+          "label": "Brad Bradford",
+          "city_share": 0.0107
+        }
+      ]
+    }
+  ]
+}

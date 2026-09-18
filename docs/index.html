@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toronto Elections and Social Geography 1997-2023</title>
+  <meta name="description" content="Side-by-side maps of Toronto census-tract social geography and mayoral election results, 1997-2023.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.0/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Toronto Elections and Social Geography 1997-2023</h1>
+    <p class="subtitle">Census tracts (2021 boundaries). Pan, zoom, or hover on either map; the other follows.</p>
+  </header>
+
+  <main class="panels">
+    <section class="panel" id="panel-census" aria-labelledby="census-heading">
+      <div class="panel-head">
+        <h2 id="census-heading">Social geography</h2>
+        <div class="controls">
+          <label class="field field-wide">
+            <span>Variable</span>
+            <select id="census-var"></select>
+          </label>
+          <label class="field">
+            <span>Census year</span>
+            <select id="census-year"></select>
+          </label>
+          <label class="field">
+            <span>Classes</span>
+            <select id="census-scale">
+              <option value="year">Quantiles, this year</option>
+              <option value="all">Quantiles, all years</option>
+            </select>
+          </label>
+          <label class="check">
+            <input type="checkbox" id="census-all">
+            <span>Show all variables</span>
+          </label>
+        </div>
+        <p class="note" id="census-note"></p>
+      </div>
+      <div class="map-wrap">
+        <div class="map" id="map-census"></div>
+        <div class="legend" id="legend-census"></div>
+        <div class="readout" id="readout-census" hidden></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-election" aria-labelledby="election-heading">
+      <div class="panel-head">
+        <h2 id="election-heading">Mayoral elections</h2>
+        <div class="controls">
+          <label class="field field-wide">
+            <span>Candidate</span>
+            <select id="election-cand"></select>
+          </label>
+          <label class="field">
+            <span>Election year</span>
+            <select id="election-year"></select>
+          </label>
+          <label class="field">
+            <span>Classes</span>
+            <select id="election-scale">
+              <option value="fixed">Fixed, 0–70%+</option>
+              <option value="quantile">Quantiles</option>
+            </select>
+          </label>
+        </div>
+        <p class="note" id="election-note"></p>
+      </div>
+      <div class="map-wrap">
+        <div class="map" id="map-election"></div>
+        <div class="legend" id="legend-election"></div>
+        <div class="readout" id="readout-election" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Vote shares are for mayoral candidates, allocated to 2021 census tracts. Candidates with at least 1% of the citywide vote are listed.
+      Income, density and access measures are z-scores standardized within each census year.</p>
+  </footer>
+
+  <div class="loading" id="loading">Loading data…</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
