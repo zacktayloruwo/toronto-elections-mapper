@@ -13,9 +13,46 @@
 </head>
 <body>
   <header class="site-header">
-    <h1>Toronto Elections and Social Geography 1997-2023</h1>
-    <p class="subtitle">Census tracts (2021 boundaries). Pan, zoom, or hover on either map; the other follows.</p>
+    <div class="header-text">
+      <h1>Toronto Elections and Social Geography 1997-2023</h1>
+      <p class="subtitle">Created by Prof. Zack Taylor, University of Western Ontario.</p>
+    </div>
+    <div class="header-buttons">
+      <button type="button" id="corr-toggle" class="corr-toggle" aria-expanded="false" aria-controls="corr-drawer">
+        <span id="corr-summary">Correlations</span>
+        <span class="chev" aria-hidden="true">▾</span>
+      </button>
+      <button type="button" id="about-toggle" class="corr-toggle" aria-expanded="false" aria-controls="about">
+        About
+      </button>
+    </div>
   </header>
+
+  <section class="corr" id="corr-drawer" hidden aria-label="Correlations between vote share, census variables and other candidates">
+    <div class="corr-block corr-rank">
+      <h3 id="corr-rank-title"></h3>
+      <div id="corr-bars"></div>
+    </div>
+    <div class="corr-block corr-scatter-block">
+      <h3 id="corr-scatter-title"></h3>
+      <div id="corr-scatter"></div>
+    </div>
+    <div class="corr-block corr-votes">
+      <h3 id="corr-cand-title"></h3>
+      <div id="corr-cand-bars"></div>
+    </div>
+    <div class="corr-block corr-note">
+      <h3>Note:</h3>
+      <p class="corr-foot">Pearson correlations across census tracts, showing only coefficients
+        significant at p &lt; 0.05. Vote shares are correlated across tracts over all elections.
+        Click any bar to map that variable or candidate.</p>
+      <p class="corr-foot">Tracts are not people: a correlation here describes places, not voters.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about" hidden aria-label="About this map">
+    <div class="about-body" id="about-body"></div>
+  </section>
 
   <main class="panels">
     <section class="panel" id="panel-census" aria-labelledby="census-heading">
@@ -26,15 +63,15 @@
             <span>Variable</span>
             <select id="census-var"></select>
           </label>
-          <label class="field">
+          <label class="field" id="census-year-field">
             <span>Census year</span>
             <select id="census-year"></select>
           </label>
           <label class="field">
             <span>Classes</span>
             <select id="census-scale">
-              <option value="year">Quantiles, this year</option>
-              <option value="all">Quantiles, all years</option>
+              <option value="quantile">Quantiles</option>
+              <option value="percent">Percentage</option>
             </select>
           </label>
           <label class="check">
@@ -66,13 +103,16 @@
           <label class="field">
             <span>Classes</span>
             <select id="election-scale">
-              <option value="fixed">Fixed, 0–70%+</option>
               <option value="quantile">Quantiles</option>
+              <option value="fixed">Fixed, 0–70%+</option>
             </select>
+          </label>
+          <label class="check">
+            <input type="checkbox" id="election-all">
+            <span>Show all candidates</span>
           </label>
         </div>
         <p class="note" id="election-note"></p>
-        <p class="caption">Vote shares reflect election day votes. Advance votes are not included in this map.</p>
       </div>
       <div class="map-wrap">
         <div class="map" id="map-election"></div>
@@ -83,8 +123,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>Vote shares are for mayoral candidates, allocated to 2021 census tracts. Candidates with at least 1% of the citywide vote are listed.
-      Income, density and access measures are z-scores standardized within each census year.</p>
+    <p>Vote shares are for mayoral candidates, allocated to 2021 census tracts. Only election-day votes are shown.
+      Advance votes cannot be geolocated to neighbourhoods. Income, density, location, and access measures are
+      standardized relative to the average neighbourhood.</p>
   </footer>
 
   <div class="loading" id="loading">Loading data…</div>

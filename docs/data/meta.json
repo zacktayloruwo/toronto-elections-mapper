@@ -7,7 +7,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "agec0019_abs",
+      "den": "den_agec_tot",
+      "den_label": "Population by Age - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "agec2029_pct",
@@ -15,7 +21,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "agec2029_abs",
+      "den": "den_agec_tot",
+      "den_label": "Population by Age - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "agec3064_pct",
@@ -23,7 +35,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "agec3064_abs",
+      "den": "den_agec_tot",
+      "den_label": "Population by Age - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "agec065p_pct",
@@ -31,7 +49,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "agec065p_abs",
+      "den": "den_agec_tot",
+      "den_label": "Population by Age - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "marsmaclcomm_pct",
@@ -39,7 +63,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": false,
-      "years": [2011, 2016, 2021]
+      "num": "marsmaclcomm_abs",
+      "den": "den_mars_tot",
+      "den_label": "Marital Status - Age 15 and Over - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "marsnmcldivo_pct",
@@ -47,7 +77,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "marsnmcldivo_abs",
+      "den": "den_mars_tot",
+      "den_label": "Marital Status - Age 15 and Over - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "marsmaclmarr_pct",
@@ -55,7 +91,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "marsmaclmarr_abs",
+      "den": "den_mars_tot",
+      "den_label": "Marital Status - Age 15 and Over - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "marsnmclnevr_pct",
@@ -63,7 +105,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "marsnmclnevr_abs",
+      "den": "den_mars_tot",
+      "den_label": "Marital Status - Age 15 and Over - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "marsnmclsepa_pct",
@@ -71,7 +119,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "marsnmclsepa_abs",
+      "den": "den_mars_tot",
+      "den_label": "Marital Status - Age 15 and Over - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "marsnmclwido_pct",
@@ -79,7 +133,13 @@
       "group": "Age & Family",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "marsnmclwido_abs",
+      "den": "den_mars_tot",
+      "den_label": "Marital Status - Age 15 and Over - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "jwmdbike_pct",
@@ -87,7 +147,13 @@
       "group": "Commuting",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "jwmdbike_abs",
+      "den": "den_jwmd_tot",
+      "den_label": "Commute - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "jwmdauto_pct",
@@ -95,7 +161,13 @@
       "group": "Commuting",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "jwmdauto_abs",
+      "den": "den_jwmd_tot",
+      "den_label": "Commute - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "jwmdtran_pct",
@@ -103,7 +175,13 @@
       "group": "Commuting",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "jwmdtran_abs",
+      "den": "den_jwmd_tot",
+      "den_label": "Commute - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "jwmdwalk_pct",
@@ -111,7 +189,13 @@
       "group": "Commuting",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "jwmdwalk_abs",
+      "den": "den_jwmd_tot",
+      "den_label": "Commute - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "s_bikescore",
@@ -119,7 +203,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "bikescore",
+      "unit": "score100",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_dist__nc",
@@ -127,7 +217,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "dist__nc",
+      "unit": "km",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_popdsqkm__nc",
@@ -135,7 +231,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "popdsqkm__nc",
+      "unit": "per_km2",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "s_pmi_prox_idx_childcare",
@@ -143,7 +245,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_childcare",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_educpri",
@@ -151,7 +259,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_educpri",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_grocery",
@@ -159,7 +273,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_grocery",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_health",
@@ -167,7 +287,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_health",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_emp",
@@ -175,7 +301,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_emp",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_lib",
@@ -183,7 +315,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_lib",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_parks",
@@ -191,7 +329,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_parks",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_pharma",
@@ -199,7 +343,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_pharma",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_educsec",
@@ -207,7 +357,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_educsec",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_pmi_prox_idx_transit",
@@ -215,7 +371,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "pmi_prox_idx_transit",
+      "unit": "index",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_transitscore",
@@ -223,7 +385,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "transitscore",
+      "unit": "score100",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "s_walkscore",
@@ -231,7 +399,13 @@
       "group": "Density, Location & Access",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "walkscore",
+      "unit": "score100",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": true
     },
     {
       "id": "edcacert_pct",
@@ -239,7 +413,13 @@
       "group": "Education & Labour Force",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2006, 2011, 2016, 2021]
+      "num": "edcacert_abs",
+      "den": "den_edca_tot",
+      "den_label": "Educational Attainment - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "lfaainlfempl_pct",
@@ -247,7 +427,13 @@
       "group": "Education & Labour Force",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "lfaainlfempl_abs",
+      "den": "den_lfaa_tot",
+      "den_label": "Labour Force Status - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "edcahigh_pct",
@@ -255,7 +441,13 @@
       "group": "Education & Labour Force",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2006, 2011, 2016, 2021]
+      "num": "edcahigh_abs",
+      "den": "den_edca_tot",
+      "den_label": "Educational Attainment - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "lfaanolf_pct",
@@ -263,7 +455,13 @@
       "group": "Education & Labour Force",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "lfaanolf_abs",
+      "den": "den_lfaa_tot",
+      "den_label": "Labour Force Status - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "lfaainlfunem_pct",
@@ -271,7 +469,13 @@
       "group": "Education & Labour Force",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "lfaainlfunem_abs",
+      "den": "den_lfaa_tot",
+      "den_label": "Labour Force Status - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "edcauniv_pct",
@@ -279,7 +483,13 @@
       "group": "Education & Labour Force",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2006, 2011, 2016, 2021]
+      "num": "edcauniv_abs",
+      "den": "den_edca_tot2",
+      "den_label": "Educational Attainment - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmasiaeastchin_pct",
@@ -287,7 +497,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmasiaeastchin_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmasiasoutinda_pct",
@@ -295,7 +511,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmasiasoutinda_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeurobritengl_pct",
@@ -303,7 +525,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmeurobritengl_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmasiaeastfili_pct",
@@ -311,7 +539,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmasiaeastfili_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeurofren_tot_pct",
@@ -319,7 +553,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016]
+      "num": "ethmeurofren_tot_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeurosoutgrek_pct",
@@ -327,7 +567,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmeurosoutgrek_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmcarihait_pct",
@@ -335,7 +581,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmcarihait_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeurobritiris_pct",
@@ -343,7 +595,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmeurobritiris_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeurosoutital_pct",
@@ -351,7 +609,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmeurosoutital_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmcarijama_pct",
@@ -359,7 +623,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmcarijama_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmasiawestleba_pct",
@@ -367,7 +637,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmasiawestleba_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmasiasoutpaks_pct",
@@ -375,7 +651,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmasiasoutpaks_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeuroeastpoli_pct",
@@ -383,7 +665,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmeuroeastpoli_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeurosoutport_pct",
@@ -391,7 +679,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmeurosoutport_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeurobritscot_pct",
@@ -399,7 +693,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmeurobritscot_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "ethmeuroeastukra_pct",
@@ -407,7 +707,13 @@
       "group": "Ethnic Origin",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "ethmeuroeastukra_abs",
+      "den": "den_ethm_tot",
+      "den_label": "Ethnic Origin - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "dwtpapt__pct",
@@ -415,7 +721,13 @@
       "group": "Housing",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "dwtpapt__abs",
+      "den": "den_dwtp_tot",
+      "den_label": "Dwellings - Type - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "dwtpatch_pct",
@@ -423,7 +735,13 @@
       "group": "Housing",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "dwtpatch_abs",
+      "den": "den_dwtp_tot",
+      "den_label": "Dwellings - Type - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "dwtpsdet_pct",
@@ -431,7 +749,13 @@
       "group": "Housing",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "dwtpsdet_abs",
+      "den": "den_dwtp_tot",
+      "den_label": "Dwellings - Type - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "dwpc19611990_pct",
@@ -439,7 +763,13 @@
       "group": "Housing",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "dwpc19611990_abs",
+      "den": "den_dwpc_tot",
+      "den_label": "Dwellings - Period of construction - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "dwpc19912021_pct",
@@ -447,7 +777,13 @@
       "group": "Housing",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "dwpc19912021_abs",
+      "den": "den_dwpc_tot",
+      "den_label": "Dwellings - Period of construction - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "dwpc00001960_pct",
@@ -455,7 +791,13 @@
       "group": "Housing",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "dwpc00001960_abs",
+      "den": "den_dwpc_tot",
+      "den_label": "Dwellings - Period of construction - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "hhtnown__pct",
@@ -463,7 +805,13 @@
       "group": "Housing",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "hhtnown__abs",
+      "den": "den_hhtn_tot",
+      "den_label": "Dwellings - Tenure - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "hhtnrent_pct",
@@ -471,7 +819,13 @@
       "group": "Housing",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "hhtnrent_abs",
+      "den": "den_hhtn_tot",
+      "den_label": "Dwellings - Tenure - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "imstnimm_pct",
@@ -479,7 +833,13 @@
       "group": "Immigration & Language",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "imstnimm_abs",
+      "den": "den_imst_tot",
+      "den_label": "Immigrant Status - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "lnmt1resoffien___pct",
@@ -487,7 +847,13 @@
       "group": "Immigration & Language",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "lnmt1resoffien___abs",
+      "den": "den_lnmt_tot",
+      "den_label": "Mother Tongue - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "lnmt1resoffifr___pct",
@@ -495,7 +861,13 @@
       "group": "Immigration & Language",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "lnmt1resoffifr___abs",
+      "den": "den_lnmt_tot",
+      "den_label": "Mother Tongue - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "imstimmi_pct",
@@ -503,7 +875,13 @@
       "group": "Immigration & Language",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "imstimmi_abs",
+      "den": "den_imst_tot",
+      "den_label": "Immigrant Status - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "s_ihat_avg__nc",
@@ -511,7 +889,13 @@
       "group": "Income",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "ihat_avg__nc",
+      "unit": "dollars",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "s_iit__avg__nc",
@@ -519,7 +903,13 @@
       "group": "Income",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "iit__avg__nc",
+      "unit": "dollars",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "s_ihat_med__nc",
@@ -527,7 +917,13 @@
       "group": "Income",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "ihat_med__nc",
+      "unit": "dollars",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "s_iit__med__nc",
@@ -535,7 +931,13 @@
       "group": "Income",
       "kind": "z",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": null,
+      "den": null,
+      "den_label": null,
+      "nom": "iit__med__nc",
+      "unit": "dollars",
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_arts_pct",
@@ -543,7 +945,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_arts_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_busi_pct",
@@ -551,7 +959,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_busi_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_educ_pct",
@@ -559,7 +973,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_educ_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_heal_pct",
@@ -567,7 +987,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_heal_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_mgmt_pct",
@@ -575,7 +1001,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_mgmt_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_manu_pct",
@@ -583,7 +1015,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_manu_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_nsci_pct",
@@ -591,7 +1029,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_nsci_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_prim_pct",
@@ -599,7 +1043,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_prim_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_serv_pct",
@@ -607,7 +1057,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_serv_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "occ_trad_pct",
@@ -615,7 +1071,13 @@
       "group": "Occupation",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "occ_trad_abs",
+      "den": "den_occ__tot",
+      "den_label": "Occupation - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnabor_pct",
@@ -623,7 +1085,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": false,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnabor_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnchriangl_pct",
@@ -631,7 +1099,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnchriangl_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnnone_pct",
@@ -639,7 +1113,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnnone_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnchribapt_pct",
@@ -647,7 +1127,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnchribapt_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnbudd_pct",
@@ -655,7 +1141,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": false,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnbudd_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnchricath_tot_pct",
@@ -663,7 +1155,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnchricath_tot_abs",
+      "den": "den_rlgn_tot2",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnhind_pct",
@@ -671,7 +1169,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnhind_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnjewi_pct",
@@ -679,7 +1183,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnjewi_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnmusl_pct",
@@ -687,7 +1197,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnmusl_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnchriorth_tot_pct",
@@ -695,7 +1211,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnchriorth_tot_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnchriothr_pct",
@@ -703,7 +1225,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": false,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnchriothr_abs",
+      "den": "den_rlgn_tot3",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnothr_pct",
@@ -711,7 +1239,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": false,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnothr_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnchripent_pct",
@@ -719,7 +1253,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnchripent_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnsikh_pct",
@@ -727,7 +1267,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnsikh_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "rlgnchriunch_pct",
@@ -735,7 +1281,13 @@
       "group": "Religion",
       "kind": "pct",
       "curated": true,
-      "years": [2001, 2011, 2021]
+      "num": "rlgnchriunch_abs",
+      "den": "den_rlgn_tot",
+      "den_label": "Religion - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2011, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisiarab_pct",
@@ -743,7 +1295,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisiarab_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisiblck_pct",
@@ -751,7 +1309,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisiblck_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisichin_pct",
@@ -759,7 +1323,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisichin_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisifili_pct",
@@ -767,7 +1337,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisifili_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "abidabor1resfina_pct",
@@ -775,7 +1351,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "abidabor1resfina_abs",
+      "den": "den_abid_tot",
+      "den_label": "Indigenous Identity - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "abidabor__ne_pct",
@@ -783,7 +1365,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "abidabor__ne_abs",
+      "den": "den_abid_tot",
+      "den_label": "Indigenous Identity - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "abidabor1resinuk_pct",
@@ -791,7 +1379,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "abidabor1resinuk_abs",
+      "den": "den_abid_tot",
+      "den_label": "Indigenous Identity - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisijapn_pct",
@@ -799,7 +1393,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisijapn_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisikore_pct",
@@ -807,7 +1407,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisikore_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisilati_pct",
@@ -815,7 +1421,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisilati_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "abidabormres_pct",
@@ -823,7 +1435,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "abidabormres_abs",
+      "den": "den_abid_tot",
+      "den_label": "Indigenous Identity - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisimult_pct",
@@ -831,7 +1449,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisimult_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "abidabor1resmeti_pct",
@@ -839,7 +1463,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "abidabor1resmeti_abs",
+      "den": "den_abid_tot",
+      "den_label": "Indigenous Identity - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "abidnabo_pct",
@@ -847,7 +1477,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "abidnabo_abs",
+      "den": "den_abid_tot",
+      "den_label": "Indigenous Identity - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisi__ne_pct",
@@ -855,7 +1491,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisi__ne_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisisasi_pct",
@@ -863,7 +1505,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisisasi_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisiseas_pct",
@@ -871,7 +1519,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisiseas_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisi_pct",
@@ -879,7 +1533,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisi_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminvisiweas_pct",
@@ -887,7 +1547,13 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": false,
-      "years": [2001, 2006, 2011, 2016, 2021]
+      "num": "vminvisiweas_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     },
     {
       "id": "vminnvis_pct",
@@ -895,252 +1561,316 @@
       "group": "Visible Minority & Indigenous Identity",
       "kind": "pct",
       "curated": true,
-      "years": [1996, 2001, 2006, 2011, 2016, 2021]
+      "num": "vminnvis_abs",
+      "den": "den_vmin_tot",
+      "den_label": "Visible Minority - Total",
+      "nom": null,
+      "unit": null,
+      "years": [1996, 2001, 2006, 2011, 2016, 2021],
+      "fixed_in_time": false
     }
   ],
   "elections": [
     {
       "year": 1997,
+      "city_votes_cast": 723150,
+      "city_eligible": 1558360,
       "candidates": [
         {
           "id": "lastman",
           "label": "Mel Lastman",
-          "city_share": 0.509
+          "city_share": 0.509,
+          "city_votes": 368049
         },
         {
           "id": "hall",
           "label": "Barbara Hall",
-          "city_share": 0.4547
+          "city_share": 0.4547,
+          "city_votes": 328850
         },
         {
           "id": "other",
           "label": "All other candidates",
-          "city_share": 0.0363
+          "city_share": 0.0363,
+          "city_votes": 26251
         }
       ]
     },
     {
       "year": 2000,
+      "city_votes_cast": 600822,
+      "city_eligible": 1660987,
       "candidates": [
         {
           "id": "lastman",
           "label": "Mel Lastman",
-          "city_share": 0.772
+          "city_share": 0.772,
+          "city_votes": 463856
         },
         {
           "id": "gomberg",
           "label": "Tooker Gomberg",
-          "city_share": 0.0809
+          "city_share": 0.0809,
+          "city_votes": 48611
         },
         {
           "id": "anderson",
           "label": "Enza Anderson",
-          "city_share": 0.0217
+          "city_share": 0.0217,
+          "city_votes": 13053
         },
         {
           "id": "other",
           "label": "All other candidates",
-          "city_share": 0.1253
+          "city_share": 0.1253,
+          "city_votes": 75302
         }
       ]
     },
     {
       "year": 2003,
+      "city_votes_cast": 649912,
+      "city_eligible": 1821091,
       "candidates": [
         {
           "id": "miller",
           "label": "David Miller",
-          "city_share": 0.4835
+          "city_share": 0.4835,
+          "city_votes": 314247
         },
         {
           "id": "tory",
           "label": "John Tory",
-          "city_share": 0.3326
+          "city_share": 0.3326,
+          "city_votes": 216185
         },
         {
           "id": "hall",
           "label": "Barbara Hall",
-          "city_share": 0.1032
+          "city_share": 0.1032,
+          "city_votes": 67091
         },
         {
           "id": "nunziata",
           "label": "John Nunziata",
-          "city_share": 0.0384
+          "city_share": 0.0384,
+          "city_votes": 24945
         }
       ]
     },
     {
       "year": 2006,
+      "city_votes_cast": 542957,
+      "city_eligible": 1517274,
       "candidates": [
         {
           "id": "miller",
           "label": "David Miller",
-          "city_share": 0.5728
+          "city_share": 0.5728,
+          "city_votes": 310998
         },
         {
           "id": "pitfield",
           "label": "Jane Pitfield",
-          "city_share": 0.32
+          "city_share": 0.32,
+          "city_votes": 173744
         },
         {
           "id": "ledrew",
           "label": "Stephen LeDrew",
-          "city_share": 0.0132
+          "city_share": 0.0132,
+          "city_votes": 7174
         }
       ]
     },
     {
       "year": 2010,
+      "city_votes_cast": 737738,
+      "city_eligible": 1637311,
       "candidates": [
         {
           "id": "ford",
           "label": "Rob Ford",
-          "city_share": 0.4693
+          "city_share": 0.4693,
+          "city_votes": 346216
         },
         {
           "id": "smitherman",
           "label": "George Smitherman",
-          "city_share": 0.3578
+          "city_share": 0.3578,
+          "city_votes": 263982
         },
         {
           "id": "pantalone",
           "label": "Joe Pantalone",
-          "city_share": 0.1185
+          "city_share": 0.1185,
+          "city_votes": 87436
         }
       ]
     },
     {
       "year": 2014,
+      "city_votes_cast": 820616,
+      "city_eligible": 1813915,
       "candidates": [
         {
           "id": "tory",
           "label": "John Tory",
-          "city_share": 0.3836
+          "city_share": 0.3836,
+          "city_votes": 314674
         },
         {
           "id": "ford",
           "label": "Doug Ford",
-          "city_share": 0.3523
+          "city_share": 0.3523,
+          "city_votes": 288994
         },
         {
           "id": "chow",
           "label": "Olivia Chow",
-          "city_share": 0.2343
+          "city_share": 0.2343,
+          "city_votes": 192248
         }
       ]
     },
     {
       "year": 2018,
+      "city_votes_cast": 633957,
+      "city_eligible": 1880371,
       "candidates": [
         {
           "id": "tory",
           "label": "John Tory",
-          "city_share": 0.6296
+          "city_share": 0.6296,
+          "city_votes": 398335
         },
         {
           "id": "keesmaat",
           "label": "Jennifer Keesmaat",
-          "city_share": 0.2372
+          "city_share": 0.2372,
+          "city_votes": 150083
         },
         {
           "id": "goldy",
           "label": "Faith Goldy",
-          "city_share": 0.0343
+          "city_share": 0.0343,
+          "city_votes": 21705
         },
         {
           "id": "gebresellassi",
           "label": "Saron Gebresellassi",
-          "city_share": 0.0206
+          "city_share": 0.0206,
+          "city_votes": 13042
         }
       ]
     },
     {
       "year": 2022,
+      "city_votes_cast": 417386,
+      "city_eligible": null,
       "candidates": [
         {
           "id": "tory_john",
           "label": "John Tory",
-          "city_share": 0.602
+          "city_share": 0.602,
+          "city_votes": 251253
         },
         {
           "id": "penalosa_gil",
           "label": "Gil Peñalosa",
-          "city_share": 0.1793
+          "city_share": 0.1793,
+          "city_votes": 74846
         },
         {
           "id": "brown_chloe_marie",
           "label": "Chloe Brown",
-          "city_share": 0.0764
+          "city_share": 0.0764,
+          "city_votes": 31909
         },
         {
           "id": "acton_blake",
           "label": "Blake Acton",
-          "city_share": 0.0154
+          "city_share": 0.0154,
+          "city_votes": 6431
         },
         {
           "id": "climenhaga_sarah",
           "label": "Sarah Climenhaga",
-          "city_share": 0.0132
+          "city_share": 0.0132,
+          "city_votes": 5500
         },
         {
           "id": "luk_tony",
           "label": "Tony Luk",
-          "city_share": 0.0128
+          "city_share": 0.0128,
+          "city_votes": 5360
         },
         {
           "id": "yan_jack",
           "label": "Jack Yan",
-          "city_share": 0.0103
+          "city_share": 0.0103,
+          "city_votes": 4311
         }
       ]
     },
     {
       "year": 2023,
+      "city_votes_cast": 561430,
+      "city_eligible": null,
       "candidates": [
         {
           "id": "bailao_ana",
           "label": "Ana Bailão",
-          "city_share": 0.3759
+          "city_share": 0.3759,
+          "city_votes": 211053
         },
         {
           "id": "chow_olivia",
           "label": "Olivia Chow",
-          "city_share": 0.3434
+          "city_share": 0.3434,
+          "city_votes": 192772
         },
         {
           "id": "saunders_mark",
           "label": "Mark Saunders",
-          "city_share": 0.0772
+          "city_share": 0.0772,
+          "city_votes": 43349
         },
         {
           "id": "furey_anthony",
           "label": "Anthony Furey",
-          "city_share": 0.047
+          "city_share": 0.047,
+          "city_votes": 26371
         },
         {
           "id": "matlow_josh",
           "label": "Josh Matlow",
-          "city_share": 0.0407
+          "city_share": 0.0407,
+          "city_votes": 22846
         },
         {
           "id": "brown_chloe",
           "label": "Chloe Brown",
-          "city_share": 0.0277
+          "city_share": 0.0277,
+          "city_votes": 15524
         },
         {
           "id": "hunter_mitzie",
           "label": "Mitzie Hunter",
-          "city_share": 0.0254
+          "city_share": 0.0254,
+          "city_votes": 14264
         },
         {
           "id": "saccoccia_chris",
           "label": "Chris Saccoccia",
-          "city_share": 0.0124
+          "city_share": 0.0124,
+          "city_votes": 6937
         },
         {
           "id": "bradford_brad",
           "label": "Brad Bradford",
-          "city_share": 0.0107
+          "city_share": 0.0107,
+          "city_votes": 5999
         }
       ]
     }
