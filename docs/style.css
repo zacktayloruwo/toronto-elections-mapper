@@ -83,6 +83,7 @@ body {
 
 .corr svg text { font-size: 10.5px; fill: var(--ink); }
 .corr svg text.ax { fill: var(--muted); font-size: 9.5px; }
+.corr svg text.axlab { fill: var(--muted); font-size: 10px; font-weight: 600; }
 .corr svg text.stat { font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .corr svg .axis { stroke: var(--line); }
 .corr svg .pt { fill: var(--accent); fill-opacity: 0.45; }

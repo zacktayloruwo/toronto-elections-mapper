@@ -673,8 +673,8 @@ async function main() {
   }
 
   function scatter(pairs, v, stat, W) {   // stat drawn inside the plot area
-    const H = Math.round(Math.min(260, Math.max(170, W * 0.72)))
-    const m = { l: 38, r: 8, t: 8, b: 26 }
+    const H = Math.round(Math.min(275, Math.max(185, W * 0.78)))
+    const m = { l: 48, r: 8, t: 8, b: 40 }
     if (!pairs.length) return s('svg', { width: W, height: H })
     const xs = pairs.map((p) => p[0]), ys = pairs.map((p) => p[1])
     const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys)
@@ -682,6 +682,8 @@ async function main() {
     const sy = (y) => H - m.b - ((y - y0) / (y1 - y0 || 1)) * (H - m.t - m.b)
     const tick = (x, y, text, anchor) => s('text', { x, y, 'text-anchor': anchor, class: 'ax' }, text)
     const fmtX = (x) => (v.kind === 'z' ? x.toFixed(1) : fmtPct(x, 0))
+    // trim an axis title that would run past the plot
+    const fit = (text, px) => (text.length * 5.6 <= px ? text : `${text.slice(0, Math.max(6, Math.floor(px / 5.6) - 1))}…`)
 
     // least-squares line through the cloud
     const n = pairs.length
@@ -710,10 +712,18 @@ async function main() {
       ...pairs.map(([x, y]) => s('circle', { cx: sx(x).toFixed(1), cy: sy(y).toFixed(1), r: 1.7, class: 'pt' })),
       stat && stat.p < 0.05 ? line : null,
       ...readout,
-      tick(m.l, H - m.b + 14, fmtX(x0), 'start'),
-      tick(W - m.r, H - m.b + 14, fmtX(x1), 'end'),
+      tick(m.l, H - m.b + 13, fmtX(x0), 'start'),
+      tick(W - m.r, H - m.b + 13, fmtX(x1), 'end'),
       tick(m.l - 6, sy(y0), fmtPct(y0, 0), 'end'),
-      tick(m.l - 6, sy(y1) + 8, fmtPct(y1, 0), 'end'))
+      tick(m.l - 6, sy(y1) + 8, fmtPct(y1, 0), 'end'),
+      // axis titles
+      s('text', {
+        x: m.l + (W - m.l - m.r) / 2, y: H - 6, 'text-anchor': 'middle', class: 'axlab',
+      }, fit(v.label, W - m.l - m.r)),
+      s('text', {
+        x: 12, y: m.t + (H - m.b - m.t) / 2, 'text-anchor': 'middle', class: 'axlab',
+        transform: `rotate(-90 12 ${m.t + (H - m.b - m.t) / 2})`,
+      }, 'Vote share'))
   }
 
   function bars(ranked, { W, rowH, height, onPick }) {
