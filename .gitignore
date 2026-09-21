@@ -11,3 +11,8 @@
 # OS / editor
 .DS_Store
 .claude/settings.local.json
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
