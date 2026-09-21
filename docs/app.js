@@ -245,19 +245,50 @@ function navControl(map, bounds) {
   }
 }
 
-// Zoom at which the city's east-west extent exactly fills the map's width.
+// Zoom at which the city's east-west extent exactly fills a map `px` wide.
 // MapLibre's world is 512px wide at zoom 0 and doubles with each zoom level.
-function widthZoom(map, bounds) {
+function widthZoom(px, bounds) {
   const [[west], [east]] = bounds
-  const px = Math.max(50, map.getContainer().clientWidth - 2 * FIT_OPTIONS.padding)
-  return Math.log2((px * 360) / ((east - west) * 512))
+  const inner = Math.max(50, px - 2 * FIT_OPTIONS.padding)
+  return Math.log2((inner * 360) / ((east - west) * 512))
 }
 
 function fitWidth(map, bounds, animate) {
   const [[west, south], [east, north]] = bounds
-  const view = { center: [(west + east) / 2, (south + north) / 2], zoom: widthZoom(map, bounds) }
+  const view = {
+    center: [(west + east) / 2, (south + north) / 2],
+    zoom: widthZoom(map.getContainer().clientWidth, bounds),
+  }
   if (animate) map.easeTo(view)
   else map.jumpTo(view)
+}
+
+// Web Mercator in world pixels at a given world size
+const mercX = (lng, ws) => ((lng + 180) / 360) * ws
+const mercY = (lat, ws) => ((180 - (180 / Math.PI) * Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360))) / 360) * ws
+const mercLng = (x, ws) => (x / ws) * 360 - 180
+const mercLat = (y, ws) => (360 / Math.PI) * Math.atan(Math.exp(((180 - (y / ws) * 360) * Math.PI) / 180)) - 90
+
+// Camera constraint: never zoom out past the city filling the map's width, and
+// keep the city in view when panning. On each axis, a view larger than the city
+// is centred on it; a smaller one can pan until its edge meets the city's
+// (plus the fit padding). This runs inside MapLibre's transform, so unlike
+// adjusting the camera from a 'move' handler it never interrupts an animation.
+function cityConstraint(containerId, bounds) {
+  const [[west, south], [east, north]] = bounds
+  const pad = FIT_OPTIONS.padding
+  return (lngLat, zoom) => {
+    const el = document.getElementById(containerId)
+    const W = el?.clientWidth, H = el?.clientHeight
+    if (!W || !H) return { center: lngLat, zoom }
+    const z = Math.max(zoom, widthZoom(W, bounds))
+    const ws = 512 * 2 ** z
+    const clamp = (c, lo, hi, span) =>
+      hi - lo <= span ? (lo + hi) / 2 : Math.min(hi - span / 2, Math.max(lo + span / 2, c))
+    const x = clamp(mercX(lngLat.lng, ws), mercX(west, ws) - pad, mercX(east, ws) + pad, W)
+    const y = clamp(mercY(lngLat.lat, ws), mercY(north, ws) - pad, mercY(south, ws) + pad, H)
+    return { center: new maplibregl.LngLat(mercLng(x, ws), mercLat(y, ws)), zoom: z }
+  }
 }
 
 function makeMap(container, tracts, bounds) {
@@ -269,39 +300,23 @@ function makeMap(container, tracts, bounds) {
     dragRotate: false,
     pitchWithRotate: false,
     touchPitch: false,
+    transformConstrain: cityConstraint(container, bounds),
     attributionControl: { compact: true, customAttribution: 'Boundaries: Statistics Canada' },
   })
   map.touchZoomRotate.disableRotation()
   map.addControl(navControl(map, bounds), 'top-right')
 
-  // Never zoom out past the point where the city fills the map's width. The
-  // limit depends on the panel size, so recompute whenever that changes.
-  const limitZoom = () => map.setMinZoom(widthZoom(map, bounds) - 0.01)
+  // The zoom floor depends on the panel width, so recompute it on resize. If
+  // the whole city was in view before the resize, keep it in view after.
+  let showingCity = true
+  map.on('moveend', () => { showingCity = map.getZoom() - map.getMinZoom() < 0.02 })
+  const limitZoom = () => {
+    const wasShowingCity = showingCity
+    map.setMinZoom(widthZoom(map.getContainer().clientWidth, bounds) - 0.01)
+    if (wasShowingCity) fitWidth(map, bounds, false)
+  }
   map.on('load', () => { limitZoom(); fitWidth(map, bounds, false) })
   map.on('resize', limitZoom)
-
-  // Keep the city in view when panning. On each axis: if the view is larger
-  // than the city, centre it; otherwise stop the view's edge at the city's.
-  // (maxBounds would do this but also forces a zoom-in whenever the view is
-  // taller than the city, which would undo the width fit.)
-  const [[west, south], [east, north]] = bounds
-  const padX = (east - west) * 0.02
-  const padY = (north - south) * 0.02
-  const box = { w: west - padX, e: east + padX, s: south - padY, n: north + padY }
-  let clamping = false
-  map.on('move', () => {
-    if (clamping) return
-    const v = map.getBounds()
-    const c = map.getCenter()
-    const shift = (lo, hi, vlo, vhi, mid) =>
-      vhi - vlo >= hi - lo ? (lo + hi) / 2 - mid : vlo < lo ? lo - vlo : vhi > hi ? hi - vhi : 0
-    const dx = shift(box.w, box.e, v.getWest(), v.getEast(), c.lng)
-    const dy = shift(box.s, box.n, v.getSouth(), v.getNorth(), c.lat)
-    if (Math.abs(dx) < 1e-7 && Math.abs(dy) < 1e-7) return
-    clamping = true
-    map.setCenter([c.lng + dx, c.lat + dy])
-    clamping = false
-  })
 
   const ready = new Promise((resolve) => {
     map.on('load', () => {
