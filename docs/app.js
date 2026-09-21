@@ -239,10 +239,25 @@ function navControl(map, bounds) {
       return h('div', { class: 'maplibregl-ctrl maplibregl-ctrl-group' },
         button('maplibregl-ctrl-zoom-in', 'Zoom in', () => map.zoomIn()),
         button('maplibregl-ctrl-zoom-out', 'Zoom out', () => map.zoomOut()),
-        button('ctrl-fit', 'Zoom out to the whole city', () => map.fitBounds(bounds, FIT_OPTIONS)))
+        button('ctrl-fit', 'Zoom out to the whole city', () => fitWidth(map, bounds, true)))
     },
     onRemove() {},
   }
+}
+
+// Zoom at which the city's east-west extent exactly fills the map's width.
+// MapLibre's world is 512px wide at zoom 0 and doubles with each zoom level.
+function widthZoom(map, bounds) {
+  const [[west], [east]] = bounds
+  const px = Math.max(50, map.getContainer().clientWidth - 2 * FIT_OPTIONS.padding)
+  return Math.log2((px * 360) / ((east - west) * 512))
+}
+
+function fitWidth(map, bounds, animate) {
+  const [[west, south], [east, north]] = bounds
+  const view = { center: [(west + east) / 2, (south + north) / 2], zoom: widthZoom(map, bounds) }
+  if (animate) map.easeTo(view)
+  else map.jumpTo(view)
 }
 
 function makeMap(container, tracts, bounds) {
@@ -259,19 +274,34 @@ function makeMap(container, tracts, bounds) {
   map.touchZoomRotate.disableRotation()
   map.addControl(navControl(map, bounds), 'top-right')
 
-  // Never zoom out past the whole city, and keep it in view when panning.
-  // The limit depends on the panel size, so recompute whenever that changes.
-  const [[west, south], [east, north]] = bounds
-  const padX = (east - west) * 0.04
-  const padY = (north - south) * 0.04
-  map.setMaxBounds([[west - padX, south - padY], [east + padX, north + padY]])
-
-  const limitZoom = () => {
-    const camera = map.cameraForBounds(bounds, FIT_OPTIONS)
-    if (camera) map.setMinZoom(camera.zoom - 0.01)
-  }
-  map.on('load', limitZoom)
+  // Never zoom out past the point where the city fills the map's width. The
+  // limit depends on the panel size, so recompute whenever that changes.
+  const limitZoom = () => map.setMinZoom(widthZoom(map, bounds) - 0.01)
+  map.on('load', () => { limitZoom(); fitWidth(map, bounds, false) })
   map.on('resize', limitZoom)
+
+  // Keep the city in view when panning. On each axis: if the view is larger
+  // than the city, centre it; otherwise stop the view's edge at the city's.
+  // (maxBounds would do this but also forces a zoom-in whenever the view is
+  // taller than the city, which would undo the width fit.)
+  const [[west, south], [east, north]] = bounds
+  const padX = (east - west) * 0.02
+  const padY = (north - south) * 0.02
+  const box = { w: west - padX, e: east + padX, s: south - padY, n: north + padY }
+  let clamping = false
+  map.on('move', () => {
+    if (clamping) return
+    const v = map.getBounds()
+    const c = map.getCenter()
+    const shift = (lo, hi, vlo, vhi, mid) =>
+      vhi - vlo >= hi - lo ? (lo + hi) / 2 - mid : vlo < lo ? lo - vlo : vhi > hi ? hi - vhi : 0
+    const dx = shift(box.w, box.e, v.getWest(), v.getEast(), c.lng)
+    const dy = shift(box.s, box.n, v.getSouth(), v.getNorth(), c.lat)
+    if (Math.abs(dx) < 1e-7 && Math.abs(dy) < 1e-7) return
+    clamping = true
+    map.setCenter([c.lng + dx, c.lat + dy])
+    clamping = false
+  })
 
   const ready = new Promise((resolve) => {
     map.on('load', () => {
